@@ -10,7 +10,6 @@ public class Course {
 
     private UUID id;
     private String name;
-    private String department;
 
     public Course() {
         this.id = UUID.randomUUID();
@@ -24,11 +23,11 @@ public class Course {
         this.name = name;
     }
 
-    public String getDepartment() {
-        return department;
+    public UUID getId() {
+        return id;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setId(UUID id) {
+        this.id = id;
     }
 }
